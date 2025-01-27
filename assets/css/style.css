@@ -687,3 +687,38 @@ header {
     font-weight: 500;
     line-height: 20px;
 }
+
+/* CSS AREA SOCIAL MEDIA */
+
+.section-social-media {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccccccc0;
+
+}
+
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #999999;
+}
+
+.social-media-icons img {
+    width: 25px;
+    height: 25px;
+}
+
+.social-media-icons h4 {
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.social-media-icons p {
+    margin-right: 30px;
+    font-size: 10px;
+}
+
+/* CSS CONTACT US */
