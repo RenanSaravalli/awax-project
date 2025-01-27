@@ -722,3 +722,35 @@ header {
 }
 
 /* CSS CONTACT US */
+
+.section-contact-us {
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+}
+
+.section-contact-us input[type="text"],
+.section-contact-us input[type="email"],
+.section-contact-us textarea {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: transparent;
+    outline: 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.section-contact-us textarea {
+    height: 100px;
+    resize: none;
+    margin-top: 10px;
+}
+
+.section-contact--split {
+    display: flex;
+}
+
+.section-contact--split input[type="text"] {
+    margin-right: 20px;
+}

@@ -714,9 +714,11 @@
         <div class="section-body">
           <div class="section-contact-us">
             <form action="post">
-              <input type="text" name="name" id="name" placeholder="NAME" />
+              <div class="section-contact--split">
+                <input type="text" name="name" id="name" placeholder="NAME" />
 
-              <input type="email" name="mail" id="mail" placeholder="EMAIL" />
+                <input type="email" name="mail" id="mail" placeholder="EMAIL" />
+              </div>
 
               <input
                 type="text"
@@ -730,10 +732,12 @@
                 id="message"
                 placeholder="MESSAGE"
               ></textarea>
-
-              <button type="submit">
-                <a href="#" class="button">SEND MESSAGE</a>
-              </button>
+              <input
+                type="submit"
+                value="SEND MESSAGE"
+                class="button"
+                style="border: none; cursor: pointer"
+              />
             </form>
           </div>
         </div>
