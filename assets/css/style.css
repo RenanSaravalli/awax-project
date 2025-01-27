@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/* Css interface */
+
+* {
+    font-family: "Montserrat", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    height: 100px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.header {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+
+}
+
+.logoimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.logoimg img {
+    width: 70px;
+    height: 70px;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu ul,
+.menu li {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    height: 100px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #000000;
+}
+
+.menu li a:hover,
+.menu .active a {
+    border-bottom: 5px solid #b28756;
+    color: #cccccc;
+}
+
+.button {
+    display: inline-block;
+    background-color: #b28756;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 15px 40px;
+    text-decoration: none;
+    margin-top: 30px;
+    border-radius: 20px;
+
+}
+
+.banner {
+    height: calc(98vh - 100px);
+    background-color: #333333;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+}
+
+.banner .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.banner .slidearea {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+
+.banner .sliders-pointers {
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 50%;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.banner .pointer.active {
+    background-color: #b28756;
+}
+
+.default {
+    padding: 50px 0;
+}
+
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.default .section-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.default .section-desc {
+    font-size: 12px;
+    color: #CCCCCC;
+    margin: 13px 0px 40px 0px;
+    font-weight: 600;
+}
+
+.default .section-body {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.default.light {
+    background-color: #f7f7f7;
+}
+
+.default.light .section-title,
+.default.light .section-body {
+    color: #000000;
+}
+
+.default.dark {
+    background-color: #000000;
+}
+
+.default.dark .section-title,
+.default.dark .section-body {
+    color: #ffffff;
+}
+
+/* Css About us */
+
+.section-aboutus {
+    display: flex;
+}
+
+.section-aboutus--left {
+    flex: 1;
+}
+
+.section-aboutus--left p {
+    font-size: 14px;
+    line-height: 25px
+}
+
+.section-aboutus--right {
+    width: 520px;
+    text-align: center;
+}
+
+.section-aboutus--right img {
+    width: 480px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Css Services */
+
+.section-services {
+    display: flex;
+    align-items: center;
+}
+
+.section-service {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #333333;
+    padding: 25px 15px;
+}
+
+.section-service:first-child {
+    border-left: 1px solid #333333;
+}
+
+.section-service img {
+    width: 60px;
+    height: 60px;
+}
+
+.section-service h4 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.section-service p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999999;
+}
+
+/* Css Projects */
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-projects--filters {
+    border: 1px solid #cccccc;
+    background-color: #EEEEEEEE;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.section-projects--filters ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 17px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: 1px solid #cccccc;
+    color: #555555;
+    border-bottom: 3px solid #EEEEEEEE;
+    cursor: pointer;
+}
+
+.section-projects--filters ul li:hover,
+.section-projects--filters ul li.active {
+    border-bottom: 3px solid #b28756;
+}
+
+.section-projects--filters ul li:first-child {
+    border-left: 0;
+}
+
+/* CSS photos */
+
+.section-projects--photos {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-projects--photo {
+    width: 280px;
+}
+
+.section-projects--photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+
+.section-projects--photoarea img {
+    width: inherit;
+    height: inherit;
+
+}
+
+.section-projects--photoinfo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    flex-direction: column;
+    cursor: default;
+}
+
+.section-projects--photoinfo h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section-projects--photoarea:hover .section-projects--photoinfo {
+    display: flex;
+}
+
+/* CSS Team */
+
+.bg-team {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.section-team-area {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 50px 0px;
+}
+
+.section-team {
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
+}
+
+.section-team .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.section-team .slide {
+    width: 280px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color: #ffffff;
+    margin-right: 20px;
+
+}
+
+.section-team .slidearea {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    padding: 30px;
+}
+
+
+.section-team-area .sliders-pointers {
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-team-area .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 50%;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.section-team-area .pointer.active {
+    background-color: #b28756;
+}
+
+.section-team--avatar {
+    width: 150px;
+    height: auto;
+}
+
+.section-team--name {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.section-team--role {
+    font-size: 14px;
+    color: #999999;
+    margin-top: 5px;
+}
+
+.section-team--social {
+    display: flex;
+    margin-top: 20px;
+}
+
+.section-team--social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #CCCCCC;
+    margin-right: 10px;
+}
+
+.section-team--social a:hover {
+    background-color: #b28756;
+}
+
+/* CSS Happy clients */
+
+.section-happy-clients {
+    overflow-x: hidden;
+}
+
+.section-happy-clients .correct-size-image {
+    height: 150px;
+    width: 150px;
+}
+
+.section-happy-clients .sliders {
+    width: 400vw;
+    height: 100%;
+}
+
+.section-happy-clients .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+}
+
+.section-happy-clients .slidearea {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-happy-clients h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.section-happy-clients h3+p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.section-happy-clients img {
+    margin-bottom: 20px;
+}
+
+.section-happy-clients img+p {
+    width: 50%;
+    font-size: 15px;
+    line-height: 30px;
+    color: #333333;
+}
+
+.section-happy-clients .sliders-pointers {
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-happy-clients .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 50%;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.section-happy-clients .pointer.active {
+    background-color: #b28756;
+}
+
+/* CSS Section BRANDS */
+
+.section-body .section-brands {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+    border-top: 1px solid #ccccccc0;
+    border-bottom: 1px solid #ccccccc0;
+    background-color: #ffffff;
+}
+
+/* CSS Section PRICE */
+
+.section-body .section-price {
+    display: flex;
+}
+
+.section-body .section-price-box {
+    background-color: #ffffff;
+    flex: 1;
+    text-align: center;
+    padding: 20px 0px;
+    margin-right: 20px;
+}
+
+.section-body .section-price-box:last-child {
+    margin-right: 0px;
+}
+
+.section-body .section-price-box h3 {
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+.section-body .section-price-box h4 {
+    font-weight: bold;
+    font-size: 25px;
+    color: #000000;
+}
+
+.section-body .section-price-box h4+p {
+    font-size: 14px;
+    color: #999999;
+    margin-bottom: 20px;
+}
+
+.section-body .section-price-box button {
+    margin-top: 40px;
+    background-color: #000000;
+    border-radius: 35px;
+    padding: 10px 30px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.section-price-box button a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.section-body .section-price-box button:hover {
+    box-shadow: 0px 0px 5px #333333;
+}
+
+/* CSS PREMIUM */
