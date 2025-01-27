@@ -599,3 +599,47 @@ header {
 }
 
 /* CSS PREMIUM */
+
+.section-premium {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccccccc0;
+    padding-bottom: 30px;
+}
+
+.section-premium--right {
+    width: 40%;
+}
+
+.section-premium--right h3 {
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.section-premium--right h3::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 34px;
+    height: 30px;
+    right: 50%;
+    background-image: url('../images/check.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-premium--right p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #999999;
+}
+
+.section-premium--button {
+    display: flex;
+    justify-content: center;
+    transition: all 0.3 ease;
+}
+
+.section-premium--button a:hover {
+    box-shadow: 0px 0px 2px #333333;
+}
