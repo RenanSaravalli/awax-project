@@ -1155,6 +1155,7 @@ header {
     .section-projects--filters ul {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .section-projects--filters ul li {
